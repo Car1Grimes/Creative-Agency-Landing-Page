@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------------------------------------ Mutual Styles ---------------------------------------------------- */
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  width: 173px;
+  border-radius: 999px;
+  background: #143c3c;
+  line-height: 57px;
+  color: #fff;
+  font-family: "Public Sans";
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+/* ------------------------------------------------------ Header ---------------------------------------------------- */
+.header {
+  padding-top: 20px;
+}
+
+.header-top {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr 173px;
+  align-items: center;
+  padding: 8px 0 13px 0;
+}
+
+.header-top::after {
+  display: block;
+
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #dddcdc 51.09%,
+    rgba(213, 213, 213, 0) 99.68%
+  );
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 88px;
+}
+
+.navbar__list-item + .navbar__list-item {
+  margin-left: 38px;
+}
+
+.navbar__link {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.56;
+  color: #575d5e;
+}
+
+.navbar__link:hover {
+  color: #152427;
+}
+
+.navbar__link--active {
+  position: relative;
+  color: #152427;
+}
+
+.navbar__link--active::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  bottom: -31px;
+  left: 0;
+  background: #143c3c;
+}
