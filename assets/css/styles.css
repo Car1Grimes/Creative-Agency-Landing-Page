@@ -162,7 +162,6 @@ a {
 }
 
 .hero__video__play {
-  font-family: "Poppins";
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.67;
@@ -206,32 +205,200 @@ a {
   bottom: -77px;
 }
 /* Hero Styles */
-.hero-styles {
+.styles {
   display: flex;
   z-index: 1;
   position: absolute;
 }
 
-.hero-styles:first-of-type {
+.styles:first-of-type {
   align-items: flex-start;
   left: -35%;
   top: -10%;
 }
 
-.hero-styles:last-of-type {
+.styles:last-of-type {
   align-items: flex-end;
   bottom: -29%;
 }
 
-.hero-styles--string {
+.styles--string {
   position: relative;
   left: -32px;
   right: 0;
 }
 
-.hero-styles--union {
+.styles--union {
   position: relative;
   top: -30px;
   left: -40px;
 }
 /* ------------------------------------------------------ Sponsors ---------------------------------------------------- */
+.sponsors {
+  margin-top: 207px;
+}
+
+.sponsors-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #e2eddf;
+  border-radius: 999px;
+  padding: 85px 122px 87px;
+}
+
+.sponsors__item {
+  display: flex;
+  align-items: center;
+}
+
+/* Sponsors styles */
+.google {
+  font-weight: 500;
+  font-size: 3.1rem;
+  color: #143c3c;
+}
+
+.slack {
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: #143c3c;
+  margin-left: 5px;
+}
+
+.discord {
+  font-weight: 400;
+  font-size: 2.6rem;
+  color: #163c35;
+  margin-left: 11px;
+}
+
+.riotinto {
+  font-family: "Sonsie One", cursive;
+  font-weight: 400;
+  font-size: 2.3rem;
+  color: #143c3c;
+}
+
+.heroku {
+  font-weight: 600;
+  font-size: 1.9rem;
+  letter-spacing: 0.105em;
+  color: #143c3c;
+  margin-left: 14px;
+}
+/* ------------------------------------------------------ Services ---------------------------------------------------- */
+.services {
+  padding-top: 106px;
+  padding-bottom: 75px;
+}
+
+.service-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-top-left {
+  width: 50%;
+}
+
+.services__sub-title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.62;
+  color: #152427;
+  margin-left: 21px;
+}
+
+.services__sub-title::before {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: -21px;
+  content: "";
+  width: 25px;
+  height: 1px;
+  background: #152427;
+}
+
+.services__title {
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 1.24;
+  color: #152427;
+  margin-top: 12px;
+}
+
+.services__title::after {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: 10px;
+  content: "";
+  width: 66px;
+  height: 2px;
+  background: #152427;
+}
+
+.control {
+  margin-right: 73px;
+}
+
+.control__btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #e2eddf;
+  color: #152427;
+  border: none;
+}
+
+.control__btn + .control__btn {
+  margin-left: 17px;
+}
+
+.control__btn:hover {
+  background: #143c3c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.services-wrap {
+  margin-top: 76px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+}
+
+.services__item:hover {
+  box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.services__info {
+  border-radius: 0 0 20px 20px;
+  padding: 24px 0 0 18px;
+}
+
+.service__item__name {
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: #152427;
+}
+
+.service__item__desc {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: #7d8188;
+  margin-top: 18px;
+  width: 70%;
+}
+
+.service__img {
+  width: 370px;
+  height: 318px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+/* ------------------------------------------------------ Services ---------------------------------------------------- */
