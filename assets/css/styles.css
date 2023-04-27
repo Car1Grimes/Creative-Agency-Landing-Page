@@ -161,6 +161,7 @@ a {
   display: flex;
   align-items: center;
   margin-left: 37px;
+  z-index: 2;
 }
 
 .play-btn__wrap {
